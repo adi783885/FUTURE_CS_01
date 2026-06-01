@@ -1,22 +1,20 @@
-🛡️ **Web Application Security Assessment**
+**Web Application Security Assessment**
 
-👤** Auditor Profile**
+**Auditor Profile**
 
     Name: Adithyan.V  
 
-Role: Cybersecurity Researcher  
-
-Track: Cyber Security (CS)  
+Role: Cybersecurity Researcher   
 
 Tool Used: OWASP ZAP (Zed Attack Proxy)  
 
-🎯 **Target Analysis**
+**Target Analysis**
 
     URL: https://juice-shop.herokuapp.com
+    
+Type: Intentionally Vulnerable Web Application  
 
-Type: Intentionally Vulnerable Web Application    
-
-🔍 **Methodology**
+**Methodology**
 
     ZAP Setup: Configured a proxy to monitor data traffic between the browser and the website.  
 
@@ -26,13 +24,18 @@ Scanning: Conducted automated active and passive scans to detect common security
 
 Review: Analyzed 122 total alerts to verify and triage real-world security risks.  
 
-🚨 **Risk Summary**
+**Risk Summary**
 
-**Severity	  Count	Key   Vulnerabilities Identified**
-🔴 Medium	     2	      Session ID in URL Rewrite, Cross-Domain Misconfiguration  
-🟡 Low	       7	      Missing Security Headers (CSP, HSTS, X-Frame-Options)  
-🔵 Info	       3	      Server Version Leaks, Private IP Disclosure   
+🔴 Medium (2 Found): Session ID in URL Rewrite, Cross-Domain Misconfiguration.  
 
-✅ **Conclusion**
+🟡 Low (7 Found): Missing Security Headers including CSP, HSTS, and X-Frame-Options.  
+
+🔵 Informational (3 Found): Server Version Leaks and Private IP Disclosure.  
+
+**Key Findings**
+
+Detailed vulnerability analysis and technical evidence will be found in the report folder.  
+
+**Conclusion**
 
 This task helped in understanding real-world web vulnerabilities and how automated tools like OWASP ZAP assist in identifying security issues. Implementing secure cookie attributes and hardening server-side security headers will significantly improve the application's overall security posture.
